@@ -1,6 +1,5 @@
 let turn = document.getElementById("turn");
-// boxes => all boxes
-// X_or_O => to set X or O into the box
+
 let boxes = document.querySelectorAll("#main div");
 let player = ["x","o"];
 let winner = null;
@@ -82,9 +81,9 @@ for(let i = 0; i < boxes.length; i++){
                 counter++;
         return winner;
         }
-        // else{
-        //     break;
-        // }
+        else{
+            alert("Please restart the game!");
+        }
     };
 }
             
